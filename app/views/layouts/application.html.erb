@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ConcertTracker</title>
+  <title>ConcertTracker | <%= @title %></title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-
-<%= yield %>
-
+	<div class="container">
+		<%= yield %>
+	</div>
+	<%= debug(params) if Rails.env.development? %>
 </body>
 </html>
