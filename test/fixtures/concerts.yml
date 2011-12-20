@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: MyString
+  artists: MyString
+  venue: MyString
+  friends: MyString
+
+two:
+  date: MyString
+  artists: MyString
+  venue: MyString
+  friends: MyString
