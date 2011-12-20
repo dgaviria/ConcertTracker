@@ -1,2 +1,0 @@
-class UserConcertPairController < ApplicationController
-end
