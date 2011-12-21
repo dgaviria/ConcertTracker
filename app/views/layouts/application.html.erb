@@ -2,15 +2,31 @@
 <html>
 <head>
   <title>ConcertTracker | <%= @title %></title>
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    "Red_Hot_Chili_Flea/style", :media => "screen" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 
 <body>
-	<div class="container">
-		<%= yield %>
+  <div id="container">
+	<div class="contentheader"></div>
+	<div class="maincontainer">
+	  <div id="menu">
+		<div id="nav">
+		  <a href="#" title="Home">Home</a> |
+		  <a href="#" title="Concerts">Concerts</a> | 
+		  <a href="#" title="Users">Users</a> |
+		  <a href="#" title="Gallery">Gallery</a> | 
+		  <a href="#" title="About">About</a>
+		</div>
+	  </div>
+	  <div class="content">
+	    <%= yield %>
+	    <%= debug(params) if Rails.env.development? %>
+      </div>
 	</div>
-	<%= debug(params) if Rails.env.development? %>
+  </div>
+  <div class="bottom"></div>
+  <div class="footer">DMRecords &copy; 2011</div>
 </body>
 </html>
