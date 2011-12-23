@@ -16,17 +16,17 @@
 		  <a href="#" title="Home">Home</a> |
 		  <a href="#" title="Concerts">Concerts</a> | 
 		  <a href="#" title="Users">Users</a> |
-		  <a href="#" title="Gallery">Gallery</a> | 
 		  <a href="#" title="About">About</a>
 		</div>
 	  </div>
 	  <div class="content">
+		<hr>
 	    <%= yield %>
-	    <%= debug(params) if Rails.env.development? %>
       </div>
 	</div>
   </div>
   <div class="bottom"></div>
   <div class="footer">DMRecords &copy; 2011</div>
+  <%= debug(params) if Rails.env.development? %>
 </body>
 </html>
